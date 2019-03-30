@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.ut.ee.vote.VotingActivity">
+
+    <ImageButton
+        android:id="@+id/closeButtonGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24px" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/closeButtonGallery"
+        android:id="@+id/myRecyclerView">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/picDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/closeButtonGallery"
+        android:layout_toStartOf="@id/voteDesc"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/voteDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="24sp"
+        android:text="TextView" />
+
+</RelativeLayout>
